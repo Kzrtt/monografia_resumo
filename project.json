@@ -1,0 +1,23 @@
+{
+  "checkpoints": {
+    "mode": "engine_dependencies"
+  },
+  "color": "",
+  "engine": "xetex",
+  "exports": [
+    {
+      "date": 1794334763.121072,
+      "filename": "tcc_resumo.pdf",
+      "path": "/Users/felipe/Downloads/tcc_resumo.pdf"
+    }
+  ],
+  "forked_from": null,
+  "hidden": false,
+  "kind": "",
+  "main_doc": "main.tex",
+  "name": "monografia_resumo",
+  "research": {
+    "initialTask": "Define the research question and draft the article outline.",
+    "starter": "article"
+  }
+}

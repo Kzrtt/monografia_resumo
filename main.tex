@@ -1,0 +1,306 @@
+% ============================================================
+%  MONOGRAFIA — VERSÃO RESUMO (template UTFPR "RESUMO", v11.0 abr/25)
+%  TCC BSI · UTFPR Francisco Beltrão
+%  Autor: Felipe Kurt Pohling
+%  Orientadora: Prof.ª Dr.ª Mayara Cristina Pereira Yamanoe
+%  Fonte do conteúdo: projeto "monografia" (monografia_vFinal)
+% ============================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{brazil}
+\setotherlanguage{english}
+\IfFontExistsTF{Arial}{\setmainfont{Arial}}{\setmainfont{TeX Gyre Heros}}
+
+\usepackage[top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Comunicação como construção para potencial de pertencimento: o WebNews como artefato sociotécnico},
+  pdfauthor={Felipe Kurt Pohling}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% Campos ainda não preenchidos (aparecem em vermelho, como no template)
+\newcommand{\pendente}[1]{\textcolor{red}{#1}}
+
+% Dados do trabalho
+\newcommand{\autor}{FELIPE KURT POHLING}
+\newcommand{\titulo}{COMUNICAÇÃO COMO CONSTRUÇÃO PARA POTENCIAL DE PERTENCIMENTO: O WEBNEWS COMO ARTEFATO SOCIOTÉCNICO}
+\newcommand{\tituloingles}{Communication as construction of belonging potential: WebNews as a sociotechnical artifact}
+\newcommand{\cidade}{FRANCISCO BELTRÃO}
+\newcommand{\ano}{2026}
+\newcommand{\natureza}{Trabalho de Conclusão de Curso de Graduação
+  apresentado como requisito para obtenção do título de Bacharel em
+  Sistemas de Informação, da Universidade Tecnológica Federal do Paraná
+  (UTFPR).}
+
+% Bloco de assinatura de membro da banca
+\newcommand{\membro}[3]{%
+  \begin{center}
+    \rule{\linewidth}{0.4pt}\\
+    {\small #1\\ #2\\ #3\par}
+  \end{center}}
+
+\begin{document}
+\frenchspacing
+
+% ============================================================
+%  CAPA
+% ============================================================
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ}
+
+  \vspace{3cm}
+
+  \textbf{\autor}
+
+  \vfill
+
+  \textbf{\titulo}
+
+  \vfill
+  \vfill
+
+  \textbf{\cidade}\\
+  \textbf{\ano}
+  \end{onehalfspace}
+\end{center}
+\clearpage
+
+% ============================================================
+%  FOLHA DE ROSTO
+% ============================================================
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{\autor}
+
+  \vspace{4cm}
+
+  \textbf{\titulo}
+
+  \vspace{1.5cm}
+
+  \textbf{\tituloingles}
+  \end{onehalfspace}
+\end{center}
+
+\vspace{1cm}
+
+\hfill
+\begin{minipage}{0.5\textwidth}
+  \small\singlespacing
+  \natureza\\
+  Orientadora: Mayara Cristina Pereira Yamanoe.
+\end{minipage}
+
+\vfill
+
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{\cidade}\\
+  \textbf{\ano}
+  \end{onehalfspace}
+\end{center}
+\clearpage
+
+% ============================================================
+%  FOLHA DE APROVAÇÃO
+% ============================================================
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{\autor}
+
+  \vspace{1.5cm}
+
+  \textbf{\titulo}
+  \end{onehalfspace}
+\end{center}
+
+\vspace{1.5cm}
+
+\hfill
+\begin{minipage}{0.5\textwidth}
+  \small\singlespacing
+  \natureza
+\end{minipage}
+
+\vspace{1.5cm}
+
+\begin{center}
+  {\small Data de aprovação: 6 de novembro de 2026}
+\end{center}
+
+\vfill
+
+\membro{Francisco Antônio Fernandes Reinaldo}
+       {Doutorado}
+       {Universidade Tecnológica Federal do Paraná}
+\vfill
+\membro{Flavio de Almeida e Silva}
+       {Doutorado}
+       {Universidade Tecnológica Federal do Paraná}
+\vfill
+\membro{Marcos Mincov Tenório}
+       {Doutorado}
+       {Universidade Tecnológica Federal do Paraná}
+
+\vfill
+
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{\cidade}\\
+  \textbf{\ano}
+  \end{onehalfspace}
+\end{center}
+\clearpage
+
+% ============================================================
+%  RESUMO
+% ============================================================
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{RESUMO}
+  \end{onehalfspace}
+\end{center}
+\vspace{1cm}
+
+\begin{singlespace}
+\raggedright
+POHLING, Felipe Kurt. \textbf{Comunicação como construção para potencial
+de pertencimento:} o WebNews como artefato sociotécnico. 2026. Trabalho
+de Conclusão de Curso (Bacharelado em Sistemas de Informação) --
+Universidade Tecnológica Federal do Paraná, Francisco Beltrão, 2026.
+\par
+\end{singlespace}
+
+\vspace{0.6cm}
+
+\begin{singlespace}
+Esta pesquisa investiga a comunicação humana
+como mecanismo de construção de potencial de
+pertencimento (a disposição pré-vínculo que antecede
+a formação de laços sociais genuinamente satisfatórios).
+A partir de uma leitura cruzada de dez artigos científicos
+em psicologia evolutiva, neurociência, sociologia e
+ciências da comunicação, o trabalho demonstra que a
+linguagem não é a força primária do processo comunicativo,
+mas a ferramenta que o \textit{Mitteilungsbedürfnis}
+(a necessidade humana de ser conhecido pelo outro), que invoca
+para satisfazer a necessidade fundamental de pertencer;
+que as plataformas digitais contemporâneas capitalizam
+sistematicamente sobre essa necessidade, produzindo
+pertencimento sintético cujos efeitos de
+isolamento, polarização e suicídio social são
+empiricamente mensuráveis; e que é possível construir
+sistemas de informação que operem segundo lógica oposta,
+como demonstra o WebNews, plataforma \textit{multi-tenant} de
+\textit{newsletters} desenvolvida como artefato empírico desta
+pesquisa, cujas decisões de arquitetura, design e modelo
+de negócio derivam diretamente dos fundamentos biossociais
+da comunicação humana identificados na literatura. A
+metodologia combina revisão bibliográfica sistemática,
+análise teórica integrativa e \textit{Design Science
+Research} (DSR). A contribuição teórica original reside
+em três construtos: potencial de pertencimento,
+pertencimento sintético e suicídio social,
+que emergem da leitura cruzada da literatura e nomeiam
+fenômenos empiricamente observáveis mas teoricamente não
+consolidados.
+\par
+\end{singlespace}
+
+\vspace{0.6cm}
+
+\begin{singlespace}
+\raggedright
+Palavras-chave: pertencimento; comunicação; plataformas digitais;
+\textit{newsletter}; sistemas de informação; \textit{Design Science Research}.
+\par
+\end{singlespace}
+
+\vspace{1.2cm}
+
+(\quad) Não autorizo a disponibilização de endereço de correio eletrônico para contato.
+
+\vspace{0.3cm}
+
+(\,X\,) Autorizo a disponibilização do seguinte correio eletrônico para contato:\\
+kvrt.pohling@gmail.com
+\clearpage
+
+% ============================================================
+%  ABSTRACT
+% ============================================================
+\begin{english}
+\begin{center}
+  \begin{onehalfspace}
+  \textbf{ABSTRACT}
+  \end{onehalfspace}
+\end{center}
+\vspace{1cm}
+
+\begin{singlespace}
+\raggedright
+POHLING, Felipe Kurt. \textbf{Communication as construction of belonging
+potential:} WebNews as a sociotechnical artifact. 2026. Trabalho de
+Conclusão de Curso (Bacharelado em Sistemas de Informação) --
+Universidade Tecnológica Federal do Paraná, Francisco Beltrão, 2026.
+Título original: Comunicação como construção para potencial de
+pertencimento: o WebNews como artefato sociotécnico.
+\par
+\end{singlespace}
+
+\vspace{0.6cm}
+
+\begin{singlespace}
+This research investigates human communication as
+a mechanism for constructing belonging potential,
+the pre-bond disposition that precedes the formation of
+genuinely satisfying social ties. Drawing on a cross-reading
+of ten peer-reviewed articles in evolutionary psychology,
+neuroscience, sociology, and communication sciences, the
+work demonstrates that language is not the primary force
+of the communicative process, but the tool invoked by the
+\textit{Mitteilungsbedürfnis} (the human need to be known
+by others) in order to satisfy the fundamental need to
+belong; that contemporary digital platforms systematically
+capitalize on this need, producing synthetic
+belonging whose effects (isolation, polarization, and
+social suicide) are empirically measurable; and that
+it is possible to build information systems that operate
+according to an opposing logic, as demonstrated by
+WebNews, a multi-tenant newsletter platform developed as
+the empirical artifact of this research, whose
+architectural, design, and business model decisions derive
+directly from the biossocial foundations of human
+communication identified in the literature. The methodology
+combines systematic bibliographic review, integrative
+theoretical analysis, and Design Science Research (DSR).
+The original theoretical contribution lies in three
+constructs: belonging potential,
+synthetic belonging, and social suicide,
+which emerge from the cross-reading of the literature
+and name empirically observable but theoretically
+unconsolidated phenomena.
+\par
+\end{singlespace}
+
+\vspace{0.6cm}
+
+\begin{singlespace}
+\raggedright
+Keywords: belonging; communication; digital platforms; newsletter;
+information systems; Design Science Research.
+\par
+\end{singlespace}
+\end{english}
+
+\end{document}
